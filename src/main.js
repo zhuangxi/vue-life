@@ -16,14 +16,14 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 // 路由拦截器
-const whiteList = ['Login'] // 白名单
-router.beforeEach(async (to, from, next) => {
-  if (whiteList.indexOf(to.name) == -1 && !getToken()) {
-    next({ path: '/login' })
-  } else {
-    next()
-  }
-})
+// const whiteList = ['Login'] // 白名单
+// router.beforeEach(async (to, from, next) => {
+//   if (whiteList.indexOf(to.name) == -1 && !getToken()) {
+//     next({ path: '/login' })
+//   } else {
+//     next()
+//   }
+// })
 
 new Vue({
   router,

@@ -11,10 +11,10 @@ const service = axios.create({
 // request interceptor
 service.interceptors.request.use(
   config => {
-    let token = getToken()
-    if (token) {
-      config.headers['authorization'] = token
-    }
+    // let token = getToken()
+    // if (token) {
+    //   config.headers['authorization'] = token
+    // }
     return config
   },
   error => {
